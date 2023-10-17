@@ -1,0 +1,214 @@
+body {
+    height: 100vh;
+     background:   linear-gradient(90deg, #c16bf2, rgb(0, 255, 234));
+    
+      /* Add some padding to separate the content from the border */
+
+  
+  }
+  .fuckcykablyat {
+    background: linear-gradient(90deg,#c16bf2,#00bfff);
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  img {
+    display: block;
+    
+
+
+    width: auto;
+    height: auto;
+    max-width: 400px;
+  max-height: 400px;
+
+
+ }
+ 
+ 
+ #container {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  content: "";
+  top: 15%;
+  left: 40%;
+  margin-top: 150px;
+  margin-left: 80px;
+  background: rgb(21, 0, 255);
+  display: block;
+  z-index: 2;
+
+}
+
+
+  .slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 40%;
+    top: 25%;
+    width: 450px;
+    height: 450px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: 0;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+
+header {
+    background-color: rgb(37, 166, 206);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    border:  px solid rgb(15, 40, 47); /* You can adjust the width and color */
+    margin-left: 10%;
+    margin-right: 10%;
+   
+
+}
+footer 
+{
+  background-color: rgb(37, 166, 206);
+  color: rgb(255, 255, 255);
+  position: absolute;
+z-index: -1;
+  bottom: auto;
+  width: 79%;
+  
+  
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.film-list {
+    flex: 1;
+}
+
+.film-details {
+    flex: 2;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #333;
+}
+
+h2 {
+    margin-top: 0;
+}
+.scroll-menu-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+  display: flex;
+}
+
+.scroll-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.scroll-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.scroll-menu a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 10%;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 10%;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-left: 10%;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  margin-left: 10%;
+}
+
+/* Show the dropdown content when the button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-left: 10%;
+}
+
