@@ -1,6 +1,55 @@
-body {
-    height: 100vh;
-     background:   linear-gradient(90deg,   rgb(0, 255, 234), rgb(14, 51, 63));
-    
-      /* Add some padding to separate the content from the border */}
-      
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(images/background/redcross.png);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 400px;
+      background-color: #fff;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      text-align: left;
+      margin-left: 10px ;
+      margin-right: 10px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+ 
