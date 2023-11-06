@@ -70,6 +70,11 @@ menuItems.forEach((item, index) => {
         scrollToItem(index);
     });
 });
-
+function changeImage()
+{
+var img = document.getElementById("image");
+img.src="images/beesechurger.png";
+return false;
+}
 // Scroll to the first item initially
 scrollToItem(0); 

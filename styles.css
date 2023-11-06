@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-color: rgb(246, 244, 238);  
+    background-color: rgb(110, 110, 110);  
     
       /* Add some padding to separate the content from the border */
 
@@ -49,7 +49,7 @@ body {
     top: 25%;
     width: 450px;
     height: 450px;
-    background: #020f03;
+    background: #e8dec2;
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     will-change: border-radius, transform, opacity;
     animation: sliderShape 5s linear infinite;
@@ -83,11 +83,12 @@ header {
     border:  px solid rgb(15, 40, 47); /* You can adjust the width and color */
     margin-left: 10%;
     margin-right: 10%;
-    text-align: center;
+    text-align:center;
 
 }
 .logo{
   text-align: center;
+  position: relative;
 } 
 footer 
 {
@@ -183,7 +184,7 @@ h2 {
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-left: 10%;
+  margin-right: 40%;
 }
 
 /* Style the dropdown button */
@@ -231,8 +232,16 @@ h2 {
   position:static;
   
   
-color: rgb(148, 213, 44);
-align-self: left;
+color: rgb(213, 114, 44);
+margin-left: 10%;
+    border-radius: 15px;
+   text-align: left;
+    width: 130px;
+
+}
+button{
+  background-image: url(images/icon.png);
+  cursor: pointer;
 }
       
 
